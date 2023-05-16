@@ -2,10 +2,12 @@ package com.maeharin.factlin.gradle
 
 import com.maeharin.factlin.core.FactlinCore
 import org.gradle.api.DefaultTask
+import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
 import org.slf4j.LoggerFactory
 
 open class FactlinTask : DefaultTask() {
+    @Internal
     var logger = LoggerFactory.getLogger(javaClass)
 
     @TaskAction
